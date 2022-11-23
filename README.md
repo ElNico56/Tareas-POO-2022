@@ -1,2 +1,2 @@
-# botilleria-classes
-Segunda tarea POO 2022/2
+# Tareas POO 2022
+Tareitas tareosas
