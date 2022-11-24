@@ -11,7 +11,10 @@ class Account:
         self.balance = 0
 
     def deposit(self, ammount):
-        self.balance += ammount
+        if (ammount > 0):
+            self.balance += int(ammount)
+            return
+        print("Debe ser un numero positivo!")
 
     def print(self):
         print(f"\nNombre: {self.name}")
