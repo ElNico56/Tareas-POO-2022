@@ -10,7 +10,7 @@ def main():
         print("Las contraseñas no coinciden")
         return False
 
-    user = Account(nick, mail, password)
+    user = Account(nombre, run, mail, password)
     user.print()
     while True:
         if input("Quiere depositar a su cuenta? (Y/N)\n> ").upper() == "N":
