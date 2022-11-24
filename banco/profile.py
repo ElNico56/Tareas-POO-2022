@@ -16,7 +16,7 @@ class Account:
             return
         print("Debe ser un numero positivo!")
 
-    def withdrawl(self, ammount):
+    def withdraw(self, ammount):
         if ammount > 0:
             if ammount <= self.balance:
                 self.balance -= int(ammount)

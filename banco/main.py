@@ -19,7 +19,7 @@ def main():
         if input("Quiere depositar o retirar? (D/R)\n> ").upper() == "D":
             user.deposit(ammount)
         else:
-            user.withdrawl(ammount)
+            user.withdraw(ammount)
         user.print()
 
 
