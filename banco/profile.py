@@ -22,6 +22,7 @@ class Account:
                 self.balance -= int(ammount)
                 return
             print("No puede retirar mas de lo que posee!")
+            return
         print("Debe ser un numero positivo!")
 
     def print(self):

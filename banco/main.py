@@ -16,7 +16,7 @@ def main():
         if input("Quiere realizar un deposito o un retiro? (Y/N)\n> ").upper() == "N":
             break
         ammount = int(input("Ingrese la cantidad a depositar/retirar\n> "))
-        if input("Quiere depositar o retirar? (D/R)").upper() == "D":
+        if input("Quiere depositar o retirar? (D/R)\n> ").upper() == "D":
             user.deposit(ammount)
         else:
             user.withdrawl(ammount)
