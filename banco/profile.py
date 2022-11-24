@@ -4,7 +4,7 @@ class Account:
     def __init__(self, nombre, run, mail, password):
         self.id = type(self).current_id
         type(self).current_id += 1
-        self.nombre = nombre
+        self.name = name
         self.run = run
         self.mail = mail
         self.password = password
