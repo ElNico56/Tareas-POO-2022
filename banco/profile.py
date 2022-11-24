@@ -11,14 +11,14 @@ class Account:
         self.balance = 0
 
     def deposit(self, ammount):
-        if (ammount > 0):
+        if ammount > 0:
             self.balance += int(ammount)
             return
         print("Debe ser un numero positivo!")
 
     def withdrawl(self, ammount):
-        if (ammount > 0):
-            if (ammount <= self.balance):
+        if ammount > 0:
+            if ammount <= self.balance:
                 self.balance -= int(ammount)
                 return
             print("No puede retirar mas de lo que posee!")
