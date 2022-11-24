@@ -13,10 +13,13 @@ def main():
     user = Account(name, run, mail, password)
     user.print()
     while True:
-        if input("Quiere depositar a su cuenta? (Y/N)\n> ").upper() == "N":
+        if input("Quiere realizar un deposito o un retiro? (Y/N)\n> ").upper() == "N":
             break
-        ammount = int(input("Ingrese la cantidad a depositar\n> "))
-        user.deposit(ammount)
+        ammount = int(input("Ingrese la cantidad a depositar/retirar\n> "))
+        if input("Quiere depositar o retirar? (D/R)").upper() == "D":
+            user.deposit(ammount)
+        else:
+            user.withdrawl(ammount)
         user.print()
 
 
