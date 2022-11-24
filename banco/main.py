@@ -2,7 +2,7 @@ from profile import Account
 
 
 def main():
-    nombre = input("Ingrese su nombre\n> ")
+    name = input("Ingrese su nombre\n> ")
     run = input("Ingrese su RUN\n> ")
     mail = input("Ingrese su correo\n> ")
     password = input("Ingrese su contraseña\n> ")
@@ -10,7 +10,7 @@ def main():
         print("Las contraseñas no coinciden")
         return False
 
-    user = Account(nombre, run, mail, password)
+    user = Account(name, run, mail, password)
     user.print()
     while True:
         if input("Quiere depositar a su cuenta? (Y/N)\n> ").upper() == "N":
