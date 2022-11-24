@@ -18,3 +18,8 @@ class Profile:
         print("Contraseña cambiada con exito")
         self.password = new_pass
         return True
+    def print(self):
+        print(f"\nNickname: {self.nick}")
+        print(f"Correo: {self.mail}")
+        print(f"Contraseña: {self.password}")
+        print(f"Nivel: {self.level}")

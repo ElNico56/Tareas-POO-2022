@@ -9,6 +9,7 @@ def main():
         return False
 
     user = Profile(nick, mail, password)
+    user.print()
     while True:
         if (input("Quiere cambiar su contraseña? (Y/N)\n> ").upper() == "N"):
             break
@@ -16,6 +17,7 @@ def main():
         new_pass = input("Ingrese su nueva contraseña\n> ")
         confirm_pass = input("Confirme su nueva contraseña\n> ")
         user.change_pass(old_pass, new_pass, confirm_pass)
+        user.print()
 
 if (__name__ == "__main__"):
     main()
