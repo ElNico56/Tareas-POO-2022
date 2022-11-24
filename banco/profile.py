@@ -1,7 +1,7 @@
 class Account:
     current_id = 0
 
-    def __init__(self, nombre, run, mail, password):
+    def __init__(self, name, run, mail, password):
         self.id = type(self).current_id
         type(self).current_id += 1
         self.name = name
