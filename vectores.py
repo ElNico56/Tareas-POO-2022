@@ -52,33 +52,33 @@ if __name__ == "__main__":
         in_y = float(input("Componente Y vector A \n> "))
         in_z = float(input("Componente Z vector A \n> "))
 
-        A = Vector3d(in_x, in_y, in_z)
-        print(f"\nVector A: {A}\n")
+        vec_A = Vector3d(in_x, in_y, in_z)
+        print(f"\nVector A: {vec_A}\n")
 
         in_x = float(input("Componente X vector B \n> "))
         in_y = float(input("Componente Y vector B \n> "))
         in_z = float(input("Componente Z vector B \n> "))
 
-        B = Vector3d(in_x, in_y, in_z)
-        print(f"\nVector B: {B}\n")
+        vec_B = Vector3d(in_x, in_y, in_z)
+        print(f"\nVector B: {vec_B}\n")
 
         operator = input("Operación? + - . x\n> ")
 
         if operator == "+":
-            C = A + B
-            print(f"\nA + B = {C}")
+            vec_C = vec_A + vec_B
+            print(f"\nA + B = {vec_C}")
 
         elif operator == "-":
-            C = A - B
-            print(f"\nA - B = {C}")
+            vec_C = vec_A - vec_B
+            print(f"\nA - B = {vec_C}")
 
         elif operator == ".":
-            C = A.dot(B)
-            print(f"\nA . B = {C}")
+            vec_C = vec_A.dot(vec_B)
+            print(f"\nA . B = {vec_C}")
 
         elif operator == "x":
-            C = A.cross(B)
-            print(f"\nA x B = {C}")
+            vec_C = vec_A.cross(vec_B)
+            print(f"\nA x B = {vec_C}")
 
         else:
             print("\nOperacion invalida")
