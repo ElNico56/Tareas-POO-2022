@@ -50,30 +50,30 @@ if __name__ == "__main__":
         in_denom = int(input("Denominador fraccion A \n> "))
 
         A = Fraction(in_numer, in_denom)
-        print("\nFraccion A: " + str(A) + "\n")
+        print(f"\nFraccion A: {A}\n")
 
         in_numer = int(input("Numerador fraccion B \n> "))
         in_denom = int(input("Denominador fraccion B \n> "))
 
         B = Fraction(in_numer, in_denom)
-        print("\nFraccion B: " + str(B) + "\n")
+        print(f"\nFraccion B: {B}\n")
 
         operator = input("Operación? + - * / \n> ")
 
         if operator == "+":
             C = A + B
-            print("\nA + B = " + str(C) + "")
+            print(f"\nA + B = {C}")
         elif operator == "-":
             C = A - B
-            print("\nA - B = " + str(C) + "")
+            print(f"\nA - B = {C}")
         elif operator == "*":
             C = A * B
-            print("\nA * B = " + str(C) + "")
+            print(f"\nA * B = {C}")
         elif operator == "/":
             C = A / B
-            print("\nA / B = " + str(C) + "")
+            print(f"\nA / B = {C}")
         else:
             print("\nOperacion invalida")
 
-        if input("\nContinuar? Y/N \n> ").upper() == "N":
+        if input("\nContinuar? (Y/N) \n> ").upper() == "N":
             break

@@ -57,14 +57,14 @@ if __name__ == "__main__":
         in_z = float(input("Componente Z vector A \n> "))
 
         A = Vector3d(in_x, in_y, in_z)
-        print(f"\nVector A: {str(A)}\n")
+        print(f"\nVector A: {A}\n")
 
         in_x = float(input("Componente X vector B \n> "))
         in_y = float(input("Componente Y vector B \n> "))
         in_z = float(input("Componente Z vector B \n> "))
 
         B = Vector3d(in_x, in_y, in_z)
-        print(f"\nVector B: {str(B)}\n")
+        print(f"\nVector B: {B}\n")
 
         operator = input("Operación? + - . x\n> ")
 
@@ -87,5 +87,5 @@ if __name__ == "__main__":
         else:
             print("\nOperacion invalida")
 
-        if input("\nContinuar? Y/N \n> ").upper() == "N":
+        if input("\nContinuar? (Y/N) \n> ").upper() == "N":
             break
