@@ -57,32 +57,32 @@ if __name__ == "__main__":
         in_z = float(input("Componente Z vector A \n> "))
 
         A = Vector3d(in_x, in_y, in_z)
-        print("\nVector A: " + str(A) + "\n")
+        print(f"\nVector A: {str(A)}\n")
 
         in_x = float(input("Componente X vector B \n> "))
         in_y = float(input("Componente Y vector B \n> "))
         in_z = float(input("Componente Z vector B \n> "))
 
         B = Vector3d(in_x, in_y, in_z)
-        print("\nVector B: " + str(B) + "\n")
+        print(f"\nVector B: {str(B)}\n")
 
         operator = input("Operación? + - . x\n> ")
 
         if operator == "+":
             C = A + B
-            print("\nA + B = " + str(C) + "")
+            print(f"\nA + B = {C}")
 
         elif operator == "-":
             C = A - B
-            print("\nA - B = " + str(C) + "")
+            print(f"\nA - B = {C}")
 
         elif operator == ".":
             C = A.dot(B)
-            print("\nA . B = " + str(C) + "")
+            print(f"\nA . B = {C}")
 
         elif operator == "x":
             C = A.cross(B)
-            print("\nA x B = " + str(C) + "")
+            print(f"\nA x B = {C}")
 
         else:
             print("\nOperacion invalida")
