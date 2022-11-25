@@ -1,16 +1,13 @@
 ## Made for Python 3.10.x
 class Vector3d:
-    ##  Metodos  ##
+    ##  Methods  ##
     def __init__(self, x, y, z):
         self.x = x
         self.y = y
         self.z = z
 
     def __str__(self):
-        x = self.x
-        y = self.y
-        z = self.z
-        return f"({x}, {y}, {z})"
+        return f"({self.x}, {self.y}, {self.z})"
 
     def __add__(self, other):
         x = self.x + other.x
