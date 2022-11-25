@@ -1,6 +1,7 @@
 ## Made for Python 3.10.x
 class Vector3d:
-    ##  Methods  ##
+    ##    Methods    ##
+    ### Constructor ###
     def __init__(self, x, y, z):
         self.x = x
         self.y = y
