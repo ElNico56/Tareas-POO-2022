@@ -48,16 +48,18 @@ class Vector3d:
 
 if __name__ == "__main__":
     while True:
-        in_x = float(input("Componente X vector A \n> "))
-        in_y = float(input("Componente Y vector A \n> "))
-        in_z = float(input("Componente Z vector A \n> "))
+        print("Componentes vector A")
+        in_x = float(input("X > "))
+        in_y = float(input("Y > "))
+        in_z = float(input("Z > "))
 
         vec_A = Vector3d(in_x, in_y, in_z)
         print(f"\nVector A: {vec_A}\n")
 
-        in_x = float(input("Componente X vector B \n> "))
-        in_y = float(input("Componente Y vector B \n> "))
-        in_z = float(input("Componente Z vector B \n> "))
+        print("Componentes vector B")
+        in_x = float(input("X> "))
+        in_y = float(input("Y> "))
+        in_z = float(input("Z> "))
 
         vec_B = Vector3d(in_x, in_y, in_z)
         print(f"\nVector B: {vec_B}\n")
