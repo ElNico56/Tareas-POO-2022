@@ -2,7 +2,7 @@ class Country:
     def __init__(self, name, currency, code = None):
         self.name = name
         self.currency = currency
-        self.code = code
+        self.code = code.upper() if code else code
 
     def set_currency(self, new_currency, new_code):
         self.currency = new_currency
