@@ -1,11 +1,11 @@
 class Candidate:
     def __init__(self, name, party):
-        self.name = name
-        self.party = party
-        self.votes = 0
+        self._name = name
+        self._party = party
+        self._votes = 0
 
     def vote(self):
-        self.votes += 1
+        self._votes += 1
 
 
 candidates = []
