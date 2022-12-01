@@ -29,7 +29,7 @@ class Product:
 
 class Supplier:
     ## Atributos ##
-    _id  # identificador unico
+    _id = 0  # identificador unico
     _name = ""  # nombre
     _rut = ""  # rol unico trubutario
     _address = ""  # dirección
