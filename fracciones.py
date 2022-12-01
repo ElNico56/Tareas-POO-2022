@@ -3,14 +3,14 @@ class Fraction:
     ## Atributos ##
     ##  Metodos  ##
     @staticmethod
-    def _gcd(self, a, b):
+    def _gcd( a, b):
         while b != 0:
             a, b = b, a % b
         return a if a > 0 else -a
 
     def __init__(self, numer=0, denom=1, reduce=True):
         if reduce:
-            gcd = type(self)._gcd(numer, denom)
+            gcd = _gcd(numer, denom)
             numer = int(numer / gcd)
             denom = int(denom / gcd)
 
