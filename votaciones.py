@@ -4,6 +4,18 @@ class Candidate:
         self._party = party
         self._votes = 0
 
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def party(self):
+        return self._party
+
+    @property
+    def votes(self):
+        return self._votes
+
     def vote(self):
         self._votes += 1
 
