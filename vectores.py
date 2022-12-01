@@ -3,47 +3,47 @@ class Vector3d:
     ##    Methods    ##
     ### Constructor ###
     def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
+        self._x = x
+        self._y = y
+        self._z = z
 
     def __str__(self):
-        return f"({self.x}, {self.y}, {self.z})"
+        return f"({self._x}, {self._y}, {self._z})"
 
     def __add__(self, other):
-        x = self.x + other.x
-        y = self.y + other.y
-        z = self.z + other.z
+        x = self._x + other._x
+        y = self._y + other._y
+        z = self._z + other._z
         return type(self)(x, y, z)
 
     def __sub__(self, other):
-        x = self.x - other.x
-        y = self.y - other.y
-        z = self.z - other.z
+        x = self._x - other._x
+        y = self._y - other._y
+        z = self._z - other._z
         return type(self)(x, y, z)
 
     def __mul__(self, num):
-        x = self.x * num
-        y = self.y * num
-        z = self.z * num
+        x = self._x * num
+        y = self._y * num
+        z = self._z * num
         return type(self)(x, y, z)
 
     def __truediv__(self, num):
-        x = self.x / num
-        y = self.y / num
-        z = self.z / num
+        x = self._x / num
+        y = self._y / num
+        z = self._z / num
         return type(self)(x, y, z)
 
     def dot(self, other):
-        a = self.x * other.x
-        b = self.y * other.y
-        c = self.z * other.z
+        a = self._x * other._x
+        b = self._y * other._y
+        c = self._z * other._z
         return a + b + c
 
     def cross(self, other):
-        x = self.y * other.z - self.z * other.y
-        y = self.z * other.x - self.x * other.z
-        z = self.x * other.y - self.y * other.x
+        x = self._y * other._z - self._z * other._y
+        y = self._z * other._x - self._x * other._z
+        z = self._x * other._y - self._y * other._x
         return type(self)(x, y, z)
 
 
