@@ -3,45 +3,45 @@ class Fraction:
     ## Atributos ##
     ##  Metodos  ##
     @staticmethod
-    def _gcd( a, b):
+    def _gcd(a, b):
         while b != 0:
             a, b = b, a % b
         return a if a > 0 else -a
 
     def __init__(self, numer=0, denom=1, reduce=True):
         if reduce:
-            gcd = _gcd(numer, denom)
+            gcd = self._gcd(numer, denom)
             numer = int(numer / gcd)
             denom = int(denom / gcd)
 
-        self.numer = numer  # numerador
-        self.denom = denom  # denominador
+        self._numer = numer  # numerador
+        self._denom = denom  # denominador
         if denom == 0:
             raise ZeroDivisionError("El numerador no puede ser 0!")
 
     def __str__(self):
-        numer = self.numer
-        denom = self.denom
+        numer = self._numer
+        denom = self._denom
         return f"{numer}/{denom}"
 
     def __add__(self, other):
-        numer = self.numer * other.denom + other.numer * self.denom
-        denom = self.denom * other.denom
+        numer = self._numer * other._denom + other._numer * self._denom
+        denom = self._denom * other._denom
         return type(self)(numer, denom)
 
     def __sub__(self, other):
-        numer = self.numer * other.denom - other.numer * self.denom
-        denom = self.denom * other.denom
+        numer = self._numer * other._denom - other._numer * self._denom
+        denom = self._denom * other._denom
         return type(self)(numer, denom)
 
     def __mul__(self, other):
-        numer = self.numer * other.numer
-        denom = self.denom * other.denom
+        numer = self._numer * other._numer
+        denom = self._denom * other._denom
         return type(self)(numer, denom)
 
     def __truediv__(self, other):
-        numer = self.numer * other.denom
-        denom = self.denom * other.numer
+        numer = self._numer * other._denom
+        denom = self._denom * other._numer
         return type(self)(numer, denom)
 
 
